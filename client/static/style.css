@@ -10,13 +10,9 @@
 
 :root {
   --primary: #66fcf1;
-  --primary2: #45a29e;
   --dark: #0b0c10;
   --dark2: #1b232c;
   --light: #c5c6c7;
-  --light2: #c5c6c730;
-  --white: #fff;
-  --black: #000;
 }
 
 body {
@@ -58,6 +54,10 @@ textarea {
   border: 1px solid var(--light);
 }
 
+::placeholder {
+  color: var(--light);
+}
+
 input:focus,
 textarea:focus {
   border: 1px solid var(--primary);
@@ -69,6 +69,7 @@ textarea:focus {
   margin-top: 5vh;
   height: 45vh;
   background-color: var(--dark2);
+  border: 1px solid var(--light);
   overflow-y: scroll;
 }
 
