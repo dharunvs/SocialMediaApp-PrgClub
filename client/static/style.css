@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #c5c6c7;
+}
+
+:root {
+  --primary: #66fcf1;
+  --primary2: #45a29e;
+  --dark: #0b0c10;
+  --dark2: #1b232c;
+  --light: #c5c6c7;
+  --light2: #c5c6c730;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: scroll;
+  background-color: var(--dark);
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  color: var(--primary);
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  padding: 10px;
+  background-color: var(--dark2);
+  outline: none;
+  resize: none;
+  border: 1px solid var(--light);
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid var(--primary);
+}
+
+.messages {
+  width: 500px;
+  margin: auto;
+  margin-top: 5vh;
+  height: 45vh;
+  background-color: var(--dark2);
+  overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
+.post-element {
+  margin: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+button {
+  border: 1px solid var(--primary);
+  padding: 8px;
+  margin-top: 20px;
+  background: none;
+  outline: none;
+  color: var(--primary);
+  transition: 200ms ease-in-out;
+}
+
+button:hover {
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.name {
+  font-weight: 700;
+  color: var(--primary);
+}

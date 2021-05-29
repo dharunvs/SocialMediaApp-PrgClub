@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>Social Media</title>
+  </head>
+  <body>
+    <h1>Social Media App</h1>
+    <form method="POST">
+      <label>
+        <input name="name" type="text" required placeholder="Name" />
+      </label>
+      <label>
+        <textarea
+          name="message"
+          cols="30"
+          rows="4"
+          required
+          placeholder="Message"
+        ></textarea>
+      </label>
+      <button type="submit">Post</button>
+    </form>
+    <!-- <form action="#" method="GET">
+      <button type="submit">Delete</button>
+    </form> -->
+    <div class="messages">
+      {% for i in info %}
+      <div class="post-element">
+        <div class="name">{{i[1]}}</div>
+        <div class="message">{{i[2]}}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <form method="GET">
+      <button type="submit">Clear Chat</button>
+    </form>
+  </body>
+</html>
