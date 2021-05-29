@@ -67,7 +67,7 @@ textarea:focus {
   width: 500px;
   margin: auto;
   margin-top: 5vh;
-  height: 45vh;
+  height: 40vh;
   background-color: var(--dark2);
   border: 1px solid var(--light);
   overflow-y: scroll;
